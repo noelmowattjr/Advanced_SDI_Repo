@@ -8,5 +8,10 @@ namespace NoelMowatt_CE01
 {
     class Musician
     {
+        //--Musician Class blueprints
+        static bool playsGuitar = true;
+        static bool bandMember = true;
+        static string genre;
+        static int albums;
     }
 }

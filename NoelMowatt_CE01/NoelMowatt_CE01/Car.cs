@@ -8,5 +8,10 @@ namespace NoelMowatt_CE01
 {
     class Car
     {
+        //--Car Class blueprints
+        static string theMake;
+        static int theYear;
+        static bool allWheelDrive;
+        
     }
 }
