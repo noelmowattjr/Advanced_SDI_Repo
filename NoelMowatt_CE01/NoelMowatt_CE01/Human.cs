@@ -9,9 +9,22 @@ namespace NoelMowatt_CE01
     class Human
     {
         //--Human Class blueprints
-        static int age;
-        static string gender;
-        static string name;
-        static bool isStudent = true;
+        public int age;
+        public char gender;
+        public string name;
+        public bool student;
+
+        //--Two additional blueprints
+        Car Maserati;
+        Musician RKelly;
+
+        //--Human Constructor
+        public Human(int Age, char Gender, string Name, bool Student)
+        {
+            age = Age;
+            gender = Gender;
+            name = Name;
+            student = Student;
+        }
     }
 }

@@ -14,7 +14,10 @@ namespace NoelMowatt_CE01
                 Classes & Methods Review
                 Lab 1
                 Monday, 11/21/2016 */
+            Human iHuman = new Human(Age: 28, Gender: 'M', Name: null, Student: true);
 
+            Console.WriteLine("iHuman: {0}", iHuman);
+            
         }
     }
 }
