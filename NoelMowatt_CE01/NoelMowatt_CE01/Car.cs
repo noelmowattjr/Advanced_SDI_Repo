@@ -9,19 +9,20 @@ namespace NoelMowatt_CE01
     class Car
     {
         //--Car Class blueprints
-        static string make;
-        static int year;
-        static bool allWheelDrive;
+        public string make;
+        public int year;
+        public bool allWheelDrive;
 
         //--Two additional blueprints
         Human mariumShene;
         Musician JimiHendrix;
 
         //--Car Constructor
-        public Car()
+        public Car(string Make, int Year, bool AllWheelsDrive)
         {
-            string Make = make;
-            int Yyear = year; 
+            make = Make;
+            year = Year;
+            allWheelDrive = AllWheelsDrive;
         }
         
     }

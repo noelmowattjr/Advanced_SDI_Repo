@@ -9,22 +9,22 @@ namespace NoelMowatt_CE01
     class Musician
     {
         //--Musician Class blueprints
-        static bool guitarist = true;
-        static bool bandMember = true;
-        static string genre;
-        static int albums;
+        public bool guitarist = true;
+        public bool bandMember = true;
+        public string genre;
+        public int albums;
 
         //--Two additional blueprints
         Car Ferrari;
         Human NoelMowattJr;
 
         //--Musician Constructor
-        public Musician()
+        public Musician(bool Guitarist, bool BandMember, string Genre, int Albums)
         {
-            bool Guitarist = guitarist;
-            bool BandMember = bandMember;
-            string Genre = genre;
-            int Albums = albums;
+            guitarist = Guitarist;
+            bandMember = BandMember;
+            genre = Genre;
+            albums = Albums;
         }
     }
 }
