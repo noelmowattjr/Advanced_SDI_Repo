@@ -14,9 +14,16 @@ namespace NoelMowatt_CE01
                 Classes & Methods Review
                 Lab 1
                 Monday, 11/21/2016 */
-            Human iHuman = new Human(Age: 28, Gender: 'M', Name: null, Student: true);
+            Human iHuman = new Human(Age: 28, Gender: 'M', Name: "Noel Mowatt, Jr.", Student: true);
 
-            Console.WriteLine("iHuman: {0}", iHuman);
+            //--Created instance of name
+            int noelsAge = iHuman.age;
+            char noelsGender = iHuman.gender;
+            string noelsName = iHuman.name;
+            bool isStudent = iHuman.student;
+
+            //--print instance of name
+            Console.WriteLine("iHuman: {0}", noelsName);
             
         }
     }
