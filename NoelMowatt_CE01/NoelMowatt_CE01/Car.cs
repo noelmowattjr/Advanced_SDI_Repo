@@ -8,22 +8,60 @@ namespace NoelMowatt_CE01
 {
     class Car
     {
-        //--Car Class blueprints
-        public string make;
-        public int year;
-        public bool allWheelDrive;
+        //--Car Class fields - blueprints
+        private string make;
+        private int year;
+        private bool allWheelDrive;
 
         //--Two additional blueprints
-        Human mariumShene;
-        Musician JimiHendrix;
+        private Human mariumShene;
+        private Musician jimiHendrix;
 
-        //--Car Constructor
-        public Car(string Make, int Year, bool AllWheelsDrive)
+        public string Make
         {
+            get { return make; }
+            set { make = value; }
+        }
+
+        public int Yearr
+        {
+            get { return year; }
+            set { year = value; }
+        }
+
+        public bool AllWheelDr
+        {
+            get { return allWheelDrive; }
+            set { allWheelDrive = value; }
+        }
+
+        public Human MariumShene
+        {
+            get { return mariumShene; }
+            set { mariumShene = value; }
+        }
+
+        public Musician JimiHendrix
+        {
+            get { return jimiHendrix; }
+            set { jimiHendrix = value; }
+        }
+        /*
+        //--Car Constructor
+        public Car(string Make, int Year, bool AllWheelsDrive, Human studentHuman)
+        {
+            
+
+            
             make = Make;
             year = Year;
             allWheelDrive = AllWheelsDrive;
+
+            mariumShene = studentHuman;
+            //--this.jimiHendrix = jimiHendrixMusician;
+            
         }
+        */
         
     }
 }

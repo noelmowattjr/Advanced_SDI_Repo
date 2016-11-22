@@ -8,23 +8,48 @@ namespace NoelMowatt_CE01
 {
     class Human
     {
-        //--Human Class blueprints
-        public int age;
-        public char gender;
-        public string name;
-        public bool student;
+        //--Human Class fields - blueprints
+        private int age;
+        private char gender;
+        private string name;
 
         //--Two additional blueprints
-        Car Maserati;
-        Musician RKelly;
+        private Car maserati;
+        private Musician rKelly;
 
-        //--Human Constructor
-        public Human(int Age, char Gender, string Name, bool Student)
+
+        //--GETTERS & SETTERS--//
+        public int Age
         {
-            age = Age;
-            gender = Gender;
-            name = Name;
-            student = Student;
+            get { return age; }
+            set { age = value; }
         }
+
+        public char Gender
+        {
+            get { return gender; }
+            set { gender = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public Car Maserati
+        {
+            get { return maserati; }
+            set { maserati = value; }
+        }
+
+        public Musician RKelly
+        {
+            get { return rKelly; }
+            set { rKelly = value; }
+        }
+
+
+        
     }
 }

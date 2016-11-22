@@ -8,16 +8,48 @@ namespace NoelMowatt_CE01
 {
     class Musician
     {
-        //--Musician Class blueprints
-        public bool guitarist = true;
-        public bool bandMember = true;
-        public string genre;
-        public int albums;
+        //--Musician Class fields - blueprints
+        private bool guitarist = true;
+        private string genre;
+        private int albums;
 
         //--Two additional blueprints
-        Car Ferrari;
-        Human NoelMowattJr;
+        private Car ferrari;
+        private Human noelMowattJr;
 
+
+        //------GETTERS & SETTERS--------//
+        public bool Guitarist
+        {
+            get { return guitarist; }
+            set { guitarist = value; }
+        }
+
+        public string Genre
+        {
+            get { return genre; }
+            set { genre = value; }
+        }
+
+        public int Albums
+        {
+            get { return albums; }
+            set { albums = value; }
+        }
+
+        public Car Ferrari
+        {
+            get { return ferrari; }
+            set { ferrari = value; }
+        }
+
+        public Human NoelMowattJr
+        {
+            get { return noelMowattJr; }
+            set { noelMowattJr = value; }
+        }
+
+        /*
         //--Musician Constructor
         public Musician(bool Guitarist, bool BandMember, string Genre, int Albums)
         {
@@ -26,5 +58,6 @@ namespace NoelMowatt_CE01
             genre = Genre;
             albums = Albums;
         }
+        */
     }
 }
