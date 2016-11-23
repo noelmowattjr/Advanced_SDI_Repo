@@ -17,46 +17,27 @@ namespace NoelMowatt_CE01
 
             //-----------------------------------------------------------------------------------------//
             Musician iMusician = new Musician();
-            Console.WriteLine("Musicain Class: {0}", iMusician);    //--Prints class name: Musician
+            iMusician.Genre = "Country";
+            iMusician.Albums = 9;
+            iMusician.Guitarist = false;
+            Console.WriteLine("\r\n\r\nMusician Class objects!\r\nGenre: {0}.\r\nAlbums: {1}.\r\nIs a Guitarist: {2}", iMusician.Genre, iMusician.Albums, iMusician.Guitarist);
 
             Human iHuman = new Human();
-            Console.WriteLine("Human Class: {0}", iHuman);           //--Prints class name: Human
+            iHuman.Age = 28;
+            iHuman.Gender = 'M';
+            iHuman.Name = "Noel Mowatt, Jr.";
+            Console.WriteLine("\r\n\r\nnHuman Class objects!\r\nAge: {0}.\r\nGender: {1}.\r\nName: {2}", iHuman.Age, iHuman.Gender, iHuman.Name);
 
             Car iCar = new Car();
-            Console.WriteLine("Car Class: {0}", iCar);              //--Prints class name: Car
-            
+            iCar.Make = "McLaren";
+            iCar.Yearr = 2017;
+            iCar.AllWheelDr = true;
+            Console.WriteLine("\r\n\r\nCar Class objects!\r\nMake: {0}.\r\nYear: {1}.\r\nAll wheel drive: {2}", iCar.Make, iCar.Yearr, iCar.AllWheelDr);
             //-----------------------------------------------------------------------------------------//
-
-            //--Musician Class Instances
-            bool isGuitarist = iMusician.Guitarist;
-            string myGenre = iMusician.Genre;
-            int albumsReleased = iMusician.Albums;
-
-            //--Car Class Instances
-            string myCar = iCar.Make;
-            myCar = "Ferrari";
-            int theYear = iCar.Yearr;
-            theYear = 2017;
-            bool fourWheelDR = iCar.AllWheelDr;
-            Human Marium = iCar.MariumShene;
-            Marium.Name = "Marium Shene I.Abidi";
+            
             
 
-            //--Printed instances of Car Class to console
-            Console.WriteLine("Make of car: {0}. The Year: {1}. Is 4-wheel drive: {2}. The person: {3}", myCar, theYear, fourWheelDR, Marium);
-
-            //--Human Class Instances
-            int noelsAge = iHuman.Age;
-            char noelsGender = iHuman.Gender;
-            string noelsName = iHuman.Name;
-
-            //--Printed instances of Musician Class to console
-            Console.WriteLine("\r\nIs Guitarist: {0}. What's the genre? {2}. Albums released? {3}", isGuitarist, myGenre, albumsReleased);
-
             
-
-            //--Printed instances of Human Class to console
-            Console.WriteLine("Name: {0} Age: {1} yrs old. Gender: {2}", noelsName, noelsAge, noelsGender);
 
             
         }

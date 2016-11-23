@@ -8,6 +8,11 @@ namespace NoelMowatt_CE01
 {
     class Human
     {
+
+        /*  Access Modifier     Data-type       Identifier
+        EX:  -public-            -int-            -age-
+             */
+
         //--Human Class fields - blueprints
         private int age;
         private char gender;
