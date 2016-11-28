@@ -8,15 +8,19 @@ namespace NoelMowatt_CE02
 {
     class Weapon
     {
+        static int Swords = 0;
+
         //--Class member fields
         private int Attack;
-        private int RegenrateHealth;
+        private bool Shield;
 
         //--Constructor
-        public Weapon(int attack, int regenerateHealth)
+        public Weapon(int attack, bool shield)
         {
             Attack = attack;
-            RegenrateHealth = regenerateHealth;
+            Shield = shield;
+            Swords += 1;
+            
         }
 
         //---------Getters and Setters------------------//
@@ -26,10 +30,10 @@ namespace NoelMowatt_CE02
             set { Attack = value; }
         }
 
-        public int RegenrateHealth_GS
+        public bool Shield_GS
         {
-            get { return RegenrateHealth; }
-            set { RegenrateHealth = value; }
+            get { return Shield; }
+            set { Shield = value; }
         }
         //-------------------------------------------------//
     }

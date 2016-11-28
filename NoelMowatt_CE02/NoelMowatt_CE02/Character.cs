@@ -12,15 +12,15 @@ namespace NoelMowatt_CE02
         private string Name;
         private int BaseAttack;
         private int Health;
-        //--private Weapon Equipped;
+        private Weapon Equipped;
         private int Age;
         private char Gender;
         
         //--Constructor--//
-        public Character(string name, int baseattack, int health, int age, char gender)
+        public Character(string name, int baseattack, int health, Weapon equipped, int age, char gender)
         {
             Name = name; BaseAttack = baseattack;
-            Health = health; //--Equipped = equipped;
+            Health = health; Equipped = equipped;
             Age = age; Gender = gender;
         }
 
@@ -42,13 +42,13 @@ namespace NoelMowatt_CE02
             get { return Health; }
             set { Health = value; }
         }
-        /*
+        
         public Weapon Equipped_GS
         {
             get { return Equipped; }
             set { Equipped = value; }
         }
-        */
+        
         public int Age_GS
         {
             get { return Age; }
