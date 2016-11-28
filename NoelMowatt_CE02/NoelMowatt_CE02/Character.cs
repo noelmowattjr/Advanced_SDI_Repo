@@ -17,7 +17,7 @@ namespace NoelMowatt_CE02
         private char Gender;
         
         //--Constructor--//
-        public Character(string name, int baseattack, int health, Weapon equipped, int age, char gender)
+        public Character(string name, int baseattack, int health, int age, char gender)
         {
             Name = name; BaseAttack = baseattack;
             Health = health; //--Equipped = equipped;

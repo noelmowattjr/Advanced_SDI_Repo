@@ -10,6 +10,9 @@ namespace NoelMowatt_CE02
     {
         static void Main(string[] args)
         {
+            Character Batman = new Character(name:"Bruce Wayne", baseattack:0, health:100, age: 36, gender: 'M');
+
+            
         }
     }
 }
