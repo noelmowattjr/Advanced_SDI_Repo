@@ -9,27 +9,83 @@ namespace NoelMowatt_CE02
     class Program
     {
         static Character superHero;
+        
 
         static void Main(string[] args)
         {
-            //--Prompt user for favorite hero
-            Console.Write("Choose one of the following as your favorite superhero\r\n1) Superman\r\n2) Batman\r\n3) Wonder Woman\r\n ");
-            string entryHero = Console.ReadLine();  //--Catch user's response
+            bool continueGame = true;
 
-            //------------------VALIDATION---------------------------//
-            while (entryHero.ToLower() != "superman" && entryHero.ToLower() != "batman" && entryHero.ToLower() != "wonder woman")
+            //--GAME BEGINS
+            while (continueGame)
             {
-                Console.WriteLine("INVALID Entry!\r\nPlease choose \"1)Superman 2)Batman! 3)Wonder Woman)\" and press enter: ");
-                entryHero = Console.ReadLine();
-            }
-            //------------------------------------------------------//
+                //--Prompt user to begin program or exit
+                Console.Write("Enter \"Yes\" to continue or \"No\" to exit (YES/NO): ");
+                string yes_no = Console.ReadLine();
 
-            string hero = CapFirstLetter(entryHero);     //--Conververt user's response to where first letter is upper case
-            
-            //--Give user feedback
-            Console.WriteLine("You chose {0} as your favorite superhero!", hero);
-            
-            
+                //--VALIDATION - (YES/NO)---//
+                while (yes_no.ToLower() != "yes" && yes_no.ToLower() != "no")
+                {
+                    Console.Write("Invalid Entry!\r\nEnter (YES/NO) to proceed: ");
+                    yes_no = Console.ReadLine();
+                }
+
+                //--Conditions to Begin
+                if (yes_no.ToLower() == "yes")
+                {
+                    //--BEGIN
+                    //------------CHOICES----------------------------------------------------//
+                    Console.WriteLine("Welcome to the Game! Choose 1 of the following to proceed");
+                    Console.WriteLine("Enter \"1\" to Create Character");
+                    Console.WriteLine("Enter \"2\" to Modify Character");
+                    Console.WriteLine("Enter \"3\" to Create & Equip Weapon");
+                    Console.WriteLine("Enter \"4\" to Display Character Data");
+                    Console.WriteLine("Enter \"5\" to Exit program");
+                    string userChoice = Console.ReadLine().ToUpper();
+                    
+                    //--Do something with user's choice
+                    switch (userChoice)
+                    {
+                        case "1":
+                            {
+                                //--Create Character
+                                Console.WriteLine("Let's create a Character! Ready!");
+                                Console.Write("Enter character\'s name: ");
+                                string cName = Console.ReadLine();
+
+                                Console.WriteLine("Your character\'s name is {0}", cName);
+                                break;
+                            }
+                        case "2":
+                            {
+                                //--Modify Character
+                                break;
+                            }
+                        case "3":
+                            {
+                                //--Create and Equip Weapon
+                                break;
+                            }
+                        case "4":
+                            {
+                                //--Display Character data
+                                break;
+                            }
+                        case "5":
+                            {
+                                //--Exit Program
+                                break;
+                            }
+                    }
+                } //--Condition to exit
+                else if (yes_no.ToLower() == "no")
+                {
+                    //--EXIT the loop
+                    continueGame = false;
+                    break;
+                }
+            }
+            //--Goodbye msg
+            Console.WriteLine("Sorry to see you go. =(");
         }
         
         //--convert only first letter of string to upper case
