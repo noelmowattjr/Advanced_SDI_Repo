@@ -1,2 +1,5 @@
 # Advanced_SDI_Repo
-Code notes from Advanced SDI
+Project assignments and Code notes from Advanced SDI
+### NoelMowatt_CE02
+-Encapsulation
+-Instantiation
