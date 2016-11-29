@@ -17,13 +17,17 @@ namespace NoelMowatt_CE02
         //--Constructor
         public Weapon(int attack, bool shield)
         {
+            Swords += 1;
             Attack = attack;
             Shield = shield;
-            Swords += 1;
-            
         }
 
         //---------Getters and Setters------------------//
+        public static int Swords_G
+        {
+            get { return Swords; }
+        }
+
         public int Attack_GS
         {
             get { return Attack; }

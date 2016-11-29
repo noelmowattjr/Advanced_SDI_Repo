@@ -17,10 +17,10 @@ namespace NoelMowatt_CE02
         private char Gender;
         
         //--Constructor--//
-        public Character(string name, int baseattack, int health, Weapon equipped, int age, char gender)
+        public Character(string name, int baseattack, int health, int age, char gender)
         {
             Name = name; BaseAttack = baseattack;
-            Health = health; Equipped = equipped;
+            Health = health;
             Age = age; Gender = gender;
         }
 
@@ -28,7 +28,7 @@ namespace NoelMowatt_CE02
         public string Name_GS
         {
             get { return Name; }
-            set { Name = value; }
+            set { Name = value.ToUpper(); }
         }
 
         public int BaseAttack_GS
@@ -43,12 +43,6 @@ namespace NoelMowatt_CE02
             set { Health = value; }
         }
         
-        public Weapon Equipped_GS
-        {
-            get { return Equipped; }
-            set { Equipped = value; }
-        }
-        
         public int Age_GS
         {
             get { return Age; }
@@ -59,6 +53,12 @@ namespace NoelMowatt_CE02
         {
             get { return Gender; }
             set { Gender = value; }
+        }
+
+        public Weapon Equipped_GS
+        {
+            get { return Equipped; }
+            set { Equipped = value; }
         }
 
 
