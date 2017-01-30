@@ -11,5 +11,8 @@ namespace NoelMowatt__CE01
         private string Granite;
         private int Age;
         private bool isBrown;
+
+        private Scissors AdultScissors;
+        private Paper LinePaper;
     }
 }

@@ -11,5 +11,8 @@ namespace NoelMowatt__CE01
         private string Color;
         private int NumOfSheets;
         private bool HasLines;
+
+        private Scissors KindergardenScissor;
+        private Rock TheRock;
     }
 }

@@ -11,5 +11,8 @@ namespace NoelMowatt__CE01
         private bool IsChildrenFriendly;
         private string Brand;
         private int NumOfStickers;
+
+        private Paper Poster;
+        private Rock Stone;
     }
 }
