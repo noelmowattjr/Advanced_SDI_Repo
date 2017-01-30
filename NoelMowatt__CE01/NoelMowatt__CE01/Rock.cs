@@ -8,11 +8,19 @@ namespace NoelMowatt__CE01
 {
     class Rock
     {
-        private string Granite;
-        private int Age;
-        private bool isBrown;
+        private string _Texture;
+        private bool _Roll;
+        private int _NumOfSides;
 
-        private Scissors AdultScissors;
-        private Paper LinePaper;
+        private Scissors _AdultScissors;
+        private Paper _LinedPaper;
+
+        //--Constructor
+        public Rock(string texture, bool roll, int numOfSides)
+        {
+            _Texture = texture;
+            _Roll = roll;
+            _NumOfSides = numOfSides;
+        }
     }
 }
