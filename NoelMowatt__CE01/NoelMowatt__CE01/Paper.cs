@@ -8,11 +8,19 @@ namespace NoelMowatt__CE01
 {
     class Paper
     {
-        private string Color;
-        private int NumOfSheets;
-        private bool HasLines;
+        private string _Color;
+        private int _NumOfSheets;
+        private bool _IsPrintingPaper;
 
-        private Scissors KindergardenScissor;
-        private Rock TheRock;
+        private Scissors _KindergardenScissor;
+        private Rock _BeachRock;
+
+        //--Constructor
+        public Paper(string color, int numOfSheets, bool isPrintingPaper)
+        {
+            _Color = color;
+            _NumOfSheets = numOfSheets;
+            _IsPrintingPaper = isPrintingPaper;
+        }
     }
 }
