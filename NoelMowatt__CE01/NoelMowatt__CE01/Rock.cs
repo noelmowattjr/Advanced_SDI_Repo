@@ -8,5 +8,8 @@ namespace NoelMowatt__CE01
 {
     class Rock
     {
+        private string Granite;
+        private int Age;
+        private bool isBrown;
     }
 }

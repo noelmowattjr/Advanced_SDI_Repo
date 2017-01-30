@@ -8,5 +8,8 @@ namespace NoelMowatt__CE01
 {
     class Scissors
     {
+        private bool IsChildrenFriendly;
+        private string Brand;
+        private int NumOfStickers;
     }
 }

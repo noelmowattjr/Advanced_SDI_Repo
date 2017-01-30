@@ -8,5 +8,8 @@ namespace NoelMowatt__CE01
 {
     class Paper
     {
+        private string Color;
+        private int NumOfSheets;
+        private bool HasLines;
     }
 }
