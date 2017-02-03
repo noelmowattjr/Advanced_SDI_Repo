@@ -22,5 +22,24 @@ namespace NoelMowatt__CE01
             _HandleMaterial = materialOfHandle;
             _NumOfBlades = numOfBlades;
         }
+
+        //--Getters and Setters
+        public bool GS_isSharp
+        {
+            get { return _IsSharp; }
+            set { _IsSharp = value; }
+        }
+
+        public string GS_materialOfhandle
+        {
+            get { return _HandleMaterial; }
+            set { _HandleMaterial = value; }
+        }
+
+        public int GS_numBlades
+        {
+            get { return _NumOfBlades; }
+            set { _NumOfBlades = value; }
+        }
     }
 }
