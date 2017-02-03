@@ -22,5 +22,24 @@ namespace NoelMowatt__CE01
             _NumOfSheets = numOfSheets;
             _IsPrintingPaper = isPrintingPaper;
         }
+
+        //--Getters & Setters
+        public string GS_color
+        {
+            get { return _Color; }
+            set { _Color = value; }
+        }
+
+        public int GS_numOfSheets
+        {
+            get { return _NumOfSheets; }
+            set { _NumOfSheets = value; }
+        }
+
+        public bool GS_printablePaper
+        {
+            get { return _IsPrintingPaper; }
+            set { _IsPrintingPaper = value; }
+        }
     }
 }
