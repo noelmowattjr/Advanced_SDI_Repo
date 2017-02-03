@@ -22,5 +22,24 @@ namespace NoelMowatt__CE01
             _Roll = roll;
             _NumOfSides = numOfSides;
         }
+
+        //--Getters and Setters
+        public string GS_texture
+        {
+            get { return _Texture; }
+            set { _Texture = value; }
+        }
+
+        public bool GS_roll
+        {
+            get { return _Roll; }
+            set { _Roll = value; }
+        }
+
+        public int GS_numOfSides
+        {
+            get { return _NumOfSides; }
+            set { _NumOfSides = value; }
+        }
     }
 }
